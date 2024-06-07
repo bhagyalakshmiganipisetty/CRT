@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings - Theater Movie Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .content h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+        .booking-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .booking-form input,
+        .booking-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .booking-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .booking-form button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Theater Movie Booking</h1>
+        <nav>
+            <a href="home">Home</a>
+            <a href="nowshowing">Now Showing</a>
+            <a href="comingsoon">Coming Soon</a>
+            <a href="bookings">Bookings</a>
+            <a href="reviews">Reviews</a>
+            <a href="pricing">Pricing</a>
+            <a href="faq">FAQ</a>
+            <a href="contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>Bookings</h2>
+            <form class="booking-form" action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <select name="movie" required>
+                    <option value="">Select Movie</option>
+                    <option value="movie1">Movie 1</option>
+                    <option value="movie2">Movie 2</option>
+                    <!-- Add more movies as needed -->
+                </select>
+                <input type="date" name="date" required>
+                <select name="time" required>
+                    <option value="">Select Time</option>
+                    <option value="10am">10:00 AM</option>
+                    <option value="1pm">1:00 PM</option>
+                    <option value="4pm">4:00 PM</option>
+                    <option value="7pm">7:00 PM</option>
+                </select>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Theater Movie Booking. All rights reserved.</p>
+    </footer>
+</body>
+</html>
